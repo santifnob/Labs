@@ -55,6 +55,8 @@ namespace FuncionesLinqTest
                 "Tierra del Fuego, Antártida e Isla del Atlántico Sur",
                 "Tucumán",
             }, actual: provinciasSeleccionadas);
+
+            Console.WriteLine(provinciasSeleccionadas);
         }
 
         [Fact]
@@ -93,8 +95,9 @@ namespace FuncionesLinqTest
                 new Ciudad() {
                     Nombre = "San Miguel De Tucuman",
                     CodigoPostal = 4000
-                }
-                // Cargar 6 mas
+                },
+                new Ciudad(){Nombre = "Cañada de Gomez", CodigoPostal = 2500 },
+                new Ciudad(){Nombre = "Amstrong", CodigoPostal = 3505}
             };
 
             // Act
